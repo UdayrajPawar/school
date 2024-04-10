@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Achievements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: hsl(0, 82%, 49%);
+    }
+
+    .achievements-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #achievements-list {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .achievement-item {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="achievements-container">
+    <ul id="achievements-list">
+      <li class="achievement-item">First Place in Science Fair</li>
+      <li class="achievement-item">National Math Olympiad Winner</li>
+      <li class="achievement-item">Best Debater in Inter-school Competition</li>
+      <li class="achievement-item">Community Service Award</li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const achievementsList = document.getElementById("achievements-list");
+      const achievementItems = document.querySelectorAll(".achievement-item");
+
+      // Function to handle mouseover event
+      function handleMouseover(event) {
+        event.target.classList.add("fade-in");
+      }
+
+      // Function to handle mouseout event
+      function handleMouseout(event) {
+        event.target.classList.remove("fade-in");
+      }
+
+      // Add mouseover and mouseout event listeners to each achievement item
+      achievementItems.forEach(item => {
+        item.addEventListener("mouseover", handleMouseover);
+        item.addEventListener("mouseout", handleMouseout);
+      });
+    });
+  </script>
+
+</body>
+</html>

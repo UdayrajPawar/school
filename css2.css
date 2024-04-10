@@ -1,0 +1,255 @@
+<style>
+body {
+  overflow: visible; /* Make sure it's not set to hidden */
+}
+
+/*header */
+body {
+  font-family: 'Balbharati', Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Set a background color for better visibility */
+  text-align: center; /* Center text horizontally */
+}
+
+header {
+  padding: 20px;
+  background-color: hsl(0, 38%, 35%); /* Blue color for the header background */
+  color: #fff; /* Text color */
+}
+body {
+  font-family: 'Balbharati', Arial, sans-serif; /* Use Balbharati as the primary font */
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Set a background color for better visibility */
+  text-align: center; /* Center text horizontally */
+}
+
+header h1 {
+  font-size: 32px; /* Adjust the font size as needed */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: hsl(0, 38%, 35%); /* Blue color */
+  padding: 10px; /* Add padding for better visual appearance */
+  color: #fff; /* Text color */
+}
+
+/* You can add more styles for navigation links, hover effects, etc. */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #2980b9; /* Darker shade of blue on hover */
+}
+</style>
+ <script>
+    // JavaScript functions for slideshow navigation
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+      currentSlide = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        slide.style.display = i === currentSlide ? 'block' : 'none';
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+
+ 
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+   /* Hide the overflow to prevent horizontal scrollbar */
+}
+
+.scroll-container {
+  white-space: nowrap;
+  animation: scroll 25s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+</style>
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+ 
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/*list*/
+<style>
+body {
+    font-family: 'Balbharati', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid hwb(0 16% 56%); /* Blue color for the table border */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid hwb(0 17% 56%);; /* Blue color for the table border */
+}
+
+th {
+    background-color: hsl(0, 47%, 38%); /* Blue color for the table header background */
+    color: #fff; /* White color for the text in the header */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+</style>
+
+
+/*photoooo____________------*/
+body {
+    font-family: 'Balbharati', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.photo-container {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.photo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.photo img {
+    width: 150px; /* Set the size of the photos */
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid hsl(0, 56%, 35%); /* Blue border for the photos */
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.photo img:hover {
+    border-color: hsl(0, 45%, 42%); /* Darker blue on hover */
+}
+
+.current-photo {
+    border: 20px solid hsl(0, 45%, 42%); /* Darker blue for the selected photo */
+}
+
+.gallery-display {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery-display img {
+    width: 700%; /* Make the displayed photo fill its container */
+    max-width: 700px; /* Set a maximum width for the displayed photo */
+    border: 2px solid hsl(0, 47%, 38%); /* Blue border for the displayed photo */
+}
+
+.photo-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: hsl(0, 0%, 1%); /* Dark gray color for the caption text */
+}
+</style>
+</head>
+
+
+
+/*footer*/
+body {
+    font-family: 'Balbharati', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+footer {
+    background-color: hsl(0, 38%, 35%);
+    color: #fff;
+    padding: 5px;
+    position: bottom;
+    bottom: 0;
+    width: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 30px; /* Adjust the size of the Instagram logo */
+    cursor: pointer;
+}
+</style>

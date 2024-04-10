@@ -1,0 +1,43 @@
+<html><h1>आमच्या शाळेतील विद्यार्थ्यांचे यश</h1>
+<marquee><b>भारतरत्न डॉ. बाबासाहेब आंबेडकर विद्यालय,बोरसर,ता.वैजापूर,जिल्हा.औरंगाबाद<b></marquee>
+</html>
+
+<style>
+body {
+        font-family: 'Balbharati', Arial, sans-serif; 
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2; /* Set a background color for better visibility */
+        text-align: center; /* Center text horizontally */
+      }
+      
+      header {
+        padding: 20px;
+        background-color: hsl(0, 38%, 35%); /* Blue color for the header background */
+        color: #fff; /* Text color */
+      }
+      body {
+        font-family: 'Balbharati', Arial, sans-serif; /* Use Balbharati as the primary font */
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2; /* Set a background color for better visibility */
+        text-align: center; /* Center text horizontally */
+      }
+      
+      header h1 {
+        font-size: 32px; /* Adjust the font size as needed */
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .navbar {
+        background-color: hsl(0, 38%, 35%); /* Blue color */
+        padding: 10px; /* Add padding for better visual appearance */
+        color: #fff; /* Text color */
+      }
+
+
+      </style>
